@@ -62,7 +62,7 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">1 min read</span>
     
 
     <h1 class="article-title">Who is the Best Big Man in the NBA?</h1>
@@ -76,56 +76,12 @@
 
 
 <p>There are so many great big men in the NBA right now, but who is currently the best? Below we’ll use advanced data to help find out.</p>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
-<pre><code>## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-## ✓ tibble  3.1.6     ✓ dplyr   1.0.8
-## ✓ tidyr   1.2.0     ✓ stringr 1.4.0
-## ✓ readr   2.1.2     ✓ forcats 0.5.1</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(gt)
-library(ggrepel)</code></pre>
-<pre class="r"><code> srd&lt;- read_csv(&quot;srd.csv&quot;)</code></pre>
-<pre><code>## New names:
-## * `` -&gt; ...19
-## * `` -&gt; ...24</code></pre>
-<pre><code>## Rows: 791 Columns: 28
-## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr  (3): Player, Pos, Tm
-## dbl (23): Age, G, MP, PER, TS%, 3PAr, FTr, ORB%, DRB%, TRB%, AST%, STL%, BLK...
-## lgl  (2): ...19, ...24
-## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<pre class="r"><code>bigsrd &lt;- srd %&gt;% filter(Pos == &quot;C&quot; | Pos == &quot;PF&quot;)</code></pre>
-<pre class="r"><code>bigsrd2&lt;- bigsrd %&gt;% mutate(Player=gsub(&quot;\\\\.*&quot;,&quot;&quot;,Player))</code></pre>
-<pre class="r"><code> bigsrd3 &lt;- bigsrd2 %&gt;% filter(G &gt; 41) %&gt;%
-
-  arrange(desc(PER))</code></pre>
-<pre class="r"><code>bigsrd4 &lt;-bigsrd3 %&gt;% filter(MP &gt; 1380)</code></pre>
-<pre class="r"><code>ggplot() + geom_point(data=bigsrd4, aes(x=PER, y=WS))</code></pre>
 <p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<pre class="r"><code>ggplot() + 
-  geom_point(
-    data=bigsrd4, 
-    aes(x=PER, y=VORP, size=WS)
-    )</code></pre>
 <p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<pre class="r"><code>bigsrd4 %&gt;% 
-  ungroup() %&gt;% 
-  summarise(
-    offense = mean(PER), 
-    defense = mean(VORP)
-    )</code></pre>
 <pre><code>## # A tibble: 1 × 2
 ##   offense defense
 ##     &lt;dbl&gt;   &lt;dbl&gt;
 ## 1    17.8    1.71</code></pre>
-<pre class="r"><code>bestsrd &lt;- bigsrd4 %&gt;% top_n(5) </code></pre>
-<pre><code>## Selecting by VORP</code></pre>
 <p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 
     </div>
@@ -163,9 +119,6 @@ library(ggrepel)</code></pre>
 
 
     
-<script src="/js/math-code.js"></script>
-<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
 
     
   </body>
