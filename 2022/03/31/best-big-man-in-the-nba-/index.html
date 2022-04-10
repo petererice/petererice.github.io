@@ -22,6 +22,11 @@
 
 
 
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
 <link rel="stylesheet" href="/css/fonts.css" media="all">
 <link rel="stylesheet" href="/css/main.css" media="all">
 
@@ -72,13 +77,14 @@
 
 <p>There are so many great big men in the NBA right now, but who is the best? Because of the recent emphasis on spacing and 3-point shooting, the role of the big man has diminished in recent years. Teams now opt for fewer “non-shooters” on the court at a time, and as a result lineups have gotten smaller. Big men in the NBA might be smaller in number today, but their impact isn’t any less.
 Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, and Karl Anthony-Towns are all leading their respective playoff-bound teams and are atop the MVP conversation. Rudy Gobert and Bam Adebayo are defensive stalworths who are valuable to their team’s success without the high-end offense. These players, amongst others, are all important to winning, but recent data will help determine who has the biggest overall impact.</p>
-<p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<div id="jmjajhexgn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<pre class="r"><code>basicsrd2&lt;- basicsrd %&gt;% mutate(Player=gsub(&quot;\\\\.*&quot;,&quot;&quot;,Player))</code></pre>
+<p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<div id="wwmvfkqems" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#jmjajhexgn .gt_table {
+#wwmvfkqems .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -103,7 +109,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-left-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_heading {
+#wwmvfkqems .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -115,7 +121,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-right-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_title {
+#wwmvfkqems .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -127,7 +133,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-bottom-width: 0;
 }
 
-#jmjajhexgn .gt_subtitle {
+#wwmvfkqems .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -139,13 +145,13 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-top-width: 0;
 }
 
-#jmjajhexgn .gt_bottom_border {
+#wwmvfkqems .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_col_headings {
+#wwmvfkqems .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -160,7 +166,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-right-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_col_heading {
+#wwmvfkqems .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -180,7 +186,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   overflow-x: hidden;
 }
 
-#jmjajhexgn .gt_column_spanner_outer {
+#wwmvfkqems .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -192,15 +198,15 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   padding-right: 4px;
 }
 
-#jmjajhexgn .gt_column_spanner_outer:first-child {
+#wwmvfkqems .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jmjajhexgn .gt_column_spanner_outer:last-child {
+#wwmvfkqems .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jmjajhexgn .gt_column_spanner {
+#wwmvfkqems .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -212,7 +218,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   width: 100%;
 }
 
-#jmjajhexgn .gt_group_heading {
+#wwmvfkqems .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -237,7 +243,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   vertical-align: middle;
 }
 
-#jmjajhexgn .gt_empty_group_heading {
+#wwmvfkqems .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -252,15 +258,15 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   vertical-align: middle;
 }
 
-#jmjajhexgn .gt_from_md > :first-child {
+#wwmvfkqems .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jmjajhexgn .gt_from_md > :last-child {
+#wwmvfkqems .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jmjajhexgn .gt_row {
+#wwmvfkqems .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -279,7 +285,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   overflow-x: hidden;
 }
 
-#jmjajhexgn .gt_stub {
+#wwmvfkqems .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -292,7 +298,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   padding-right: 5px;
 }
 
-#jmjajhexgn .gt_stub_row_group {
+#wwmvfkqems .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -306,11 +312,11 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   vertical-align: top;
 }
 
-#jmjajhexgn .gt_row_group_first td {
+#wwmvfkqems .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jmjajhexgn .gt_summary_row {
+#wwmvfkqems .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -320,16 +326,16 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   padding-right: 5px;
 }
 
-#jmjajhexgn .gt_first_summary_row {
+#wwmvfkqems .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_first_summary_row.thick {
+#wwmvfkqems .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jmjajhexgn .gt_last_summary_row {
+#wwmvfkqems .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -339,7 +345,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-bottom-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_grand_summary_row {
+#wwmvfkqems .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -349,7 +355,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   padding-right: 5px;
 }
 
-#jmjajhexgn .gt_first_grand_summary_row {
+#wwmvfkqems .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -359,11 +365,11 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-top-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_striped {
+#wwmvfkqems .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jmjajhexgn .gt_table_body {
+#wwmvfkqems .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -372,7 +378,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-bottom-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_footnotes {
+#wwmvfkqems .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -386,7 +392,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-right-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_footnote {
+#wwmvfkqems .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -395,7 +401,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   padding-right: 5px;
 }
 
-#jmjajhexgn .gt_sourcenotes {
+#wwmvfkqems .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -409,7 +415,7 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   border-right-color: #D3D3D3;
 }
 
-#jmjajhexgn .gt_sourcenote {
+#wwmvfkqems .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -417,60 +423,60 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   padding-right: 5px;
 }
 
-#jmjajhexgn .gt_left {
+#wwmvfkqems .gt_left {
   text-align: left;
 }
 
-#jmjajhexgn .gt_center {
+#wwmvfkqems .gt_center {
   text-align: center;
 }
 
-#jmjajhexgn .gt_right {
+#wwmvfkqems .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jmjajhexgn .gt_font_normal {
+#wwmvfkqems .gt_font_normal {
   font-weight: normal;
 }
 
-#jmjajhexgn .gt_font_bold {
+#wwmvfkqems .gt_font_bold {
   font-weight: bold;
 }
 
-#jmjajhexgn .gt_font_italic {
+#wwmvfkqems .gt_font_italic {
   font-style: italic;
 }
 
-#jmjajhexgn .gt_super {
+#wwmvfkqems .gt_super {
   font-size: 65%;
 }
 
-#jmjajhexgn .gt_footnote_marks {
+#wwmvfkqems .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#jmjajhexgn .gt_asterisk {
+#wwmvfkqems .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jmjajhexgn .gt_slash_mark {
+#wwmvfkqems .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#jmjajhexgn .gt_fraction_numerator {
+#wwmvfkqems .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#jmjajhexgn .gt_fraction_denominator {
+#wwmvfkqems .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -656,8 +662,8 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
   
 </table>
 </div>
-<p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
-<p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="http://petererice.github.io/2022/03/31/best-big-man-in-the-nba-/index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 
     </div>
   </article>
@@ -681,7 +687,22 @@ Players such as Giannis Antetokounmpo, Joel Embiid, Nikola Jokic, Kevin Durant, 
     </div>
     
 
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
     
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
     
   </body>
